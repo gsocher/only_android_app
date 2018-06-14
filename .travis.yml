@@ -32,8 +32,8 @@ before_script:
 - chmod +x gradlew
 
 script:
-- ./gradlew build jacocoTestReport
+- ./gradlew build jacocoTestReport jacocoRootReport
 - ./gradlew clean build
 
 after_success:
-- ./gradlew jacocoRootReport coveralls
+- ./gradlew coveralls
